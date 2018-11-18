@@ -10,6 +10,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.GenericTypeIndicator
 
 class UnitsListFragment : Fragment() {
 
@@ -18,10 +19,12 @@ class UnitsListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val database = FirebaseDatabase.getInstance()
-        val units = database.getReference("Units")
+        val units = database.getReference("units")
         units.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(data: DataSnapshot) {
-                Log.d("qwerty", data.value.toString())
+                val listType = object : GenericTypeIndicator<ArrayList<Unit>>() { }
+                val unitsList = data.getValue(listType)
+                Log.d("qwerty", unitsList.toString())
             }
             override fun onCancelled(error: DatabaseError) {
                 error.toException().printStackTrace()
