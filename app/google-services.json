@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1035471769187",
+    "firebase_url": "https://waha-876cb.firebaseio.com",
+    "project_id": "waha-876cb",
+    "storage_bucket": "waha-876cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035471769187:android:b4827cd4fe899f13",
+        "android_client_info": {
+          "package_name": "akrupych.waha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035471769187-v7k8u50jekodbpt9hvrrlb2bu3cojhum.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRnR_zEiTsM3-teV3NULusqvBxOplxxoY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
